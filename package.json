@@ -1,0 +1,41 @@
+{
+  "name": "easy-form",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Easy form for React",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/ -d dist --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crefise/easy-form.git"
+  },
+  "keywords": [
+    "react",
+    "form"
+  ],
+  "author": "Volodymyr Ponomarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crefise/easy-form/issues"
+  },
+  "homepage": "https://github.com/crefise/easy-form#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "simple-react-validator": "^1.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/preset-react": "^7.18.6"
+  }
+}
